@@ -12,24 +12,14 @@ const App = () => {
 	return (
 		<AppProvider>
 			<div className='container'>
-				{/* <h1 className='mt-3'>Activity</h1> */}
-				<div className='row mt-3'>
-					<div className='col-sm'>
-						<ExpenseTotal />
-					</div>
+				<ExpenseTotal />
+				<div className='widget'>
+					<span className='bud'><Budget/></span>
+					<hr/>
+					<span className='rem-bud'><RemainingBudget/></span>
 				</div>
-				<h3 className='mt-3'>Expenses</h3>
-				<div className='row '>
-					<div className='col-sm'>
-						<ExpenseList />
-					</div>
-				</div>
-				<h3 className='mt-3'>Add Expense</h3>
-				<div className='row mt-3'>
-					<div className='col-sm'>
-						<AddExpenseForm />
-					</div>
-				</div>
+				<ExpenseList />
+				<AddExpenseForm />
 			</div>
 		</AppProvider>
 	);

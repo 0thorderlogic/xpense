@@ -2,9 +2,12 @@
 
 :root {
 	--sea-green: #18FBB6;
+	--react-blue: #61DAFB;
+	--red: #BD1B42;
 	--dark-gray: #1E1E1E;
 	--white: #E7E7E8;
 	--light-gray: #696B6C;
+	--mid-gray:#252525;
 	--accent: var(--sea-green);
 	--transparent: transparent;
 }
@@ -43,6 +46,50 @@ button, input {
 	font-weight: 400;
 }
 
+.total-exp span {
+	font-size: 34.5px;
+}
+
+/* widgets */
+
+.widget {
+	font-size: 25px;
+
+	display: flex;
+	margin: 20px;
+	padding: 40px 40px;
+	background-color: var(--mid-gray);
+}
+
+.widget hr {
+	visibility: collapse;
+}
+
+.widget .bud {
+	color: var(--sea-green);
+}
+
+.widget .rem-bud {
+	color: var(--red);
+}
+
+input {
+	/* float: inline-start; */
+	/* padding: 0; */
+	/* margin: 0; */
+	width: 20%;
+
+	border: 0;
+	background-color: var(--transparent);
+	/* padding: 13px 5px; */
+	color: var(--light-gray);
+}
+
+.btn {
+	/* border-radius: 10px; */
+	border: 0;
+}
+
 /* search bar */
 
 .search {
@@ -74,18 +121,18 @@ li  {
 li .left {
 	text-align: left;
 	width: 100px;
-	outline: auto green;
+	color: var();
 }
 
 li .center {
-	outline: auto blue;
 	margin: 0 30px;
+	color: var(--sea-green);
 }
 
-
 li .right {
-	outline: auto red;
 	float: right;
+	display: flex;
+	justify-content: center;
 }
 
 /* Add Expense */
@@ -108,5 +155,6 @@ li .right {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	border-radius: 10px;
 	float: inline-end;
 }
