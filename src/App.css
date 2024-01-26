@@ -6,11 +6,14 @@
 	--white: #E7E7E8;
 	--light-gray: #696B6C;
 	--accent: var(--sea-green);
+	--transparent: transparent;
 }
 
+* {
+	font-family: 'Fira Sans';
+}
 
 html {
-	font-family: 'Fira Sans';
 	background-color: var(--dark-gray);
 	color: var(--white);
 }
@@ -41,25 +44,32 @@ button {
 /* Add Expense */
 
 .add-exp {
-	display: flex;
-	outline: red 10px solid;
+	/* display: flex; */
+	/* outline: red 10px solid; */
 }
 
 .add-exp input {
 	float: inline-start;
 	padding: 0;
 	margin: 0;
-	width: 40%;
-	outline: auto blue;
+	width: 42%;
+	/* outline: auto blue; */
 
-	background-color: var(--dark-gray);
-	padding: 5px;
+	border: 0;
+	background-color: var(--transparent);
+	padding: 13px 5px;
 	color: var(--light-gray);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 .add-exp .btn {
+	width: 10%;
 	margin: 0;
 	padding: 0;
+	border: 0;
+	padding: 13px 5px;
 	float: inline-end;
-	outline: auto yellow;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
