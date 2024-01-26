@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--sea-green: #18FBB6;
+	--dark-gray: #1E1E1E;
+	--white: #E7E7E8;
+	--light-gray: #696B6C;
+	--accent: var(--sea-green);
+}
+
+
+html {
+	font-family: 'Fira Sans';
+	background-color: var(--dark-gray);
+	color: var(--white);
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+
+button {
+	background-color: var(--accent);
+	color: var(--dark-gray);
+}
+
+/* Total Expenditure */
+
+.total-exp {
+	font-size: 69px;
+	text-align: center;
+	font-weight: 400;
+}
+
+/* Add Expense */
+
+.add-exp {
+	display: flex;
+	outline: red 10px solid;
+}
+
+.add-exp input {
+	float: inline-start;
+	padding: 0;
+	margin: 0;
+	width: 40%;
+	outline: auto blue;
+
+	background-color: var(--dark-gray);
+	padding: 5px;
+	color: var(--light-gray);
+}
+
+.add-exp .btn {
+	margin: 0;
+	padding: 0;
+	float: inline-end;
+	outline: auto yellow;
+}
