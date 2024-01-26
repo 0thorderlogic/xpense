@@ -9,9 +9,7 @@ const ExpenseTotal = () => {
 	}, 0);
 
 	return (
-		// <div class='alert alert-primary p-4'>
-			<h2 className='total-exp'>₹{total}</h2>
-		// </div>
+		<h1 className='total-exp'>₹{total}</h1>
 	);
 };
 
