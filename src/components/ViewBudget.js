@@ -5,7 +5,7 @@ const ViewBudget = (props) => {
 	return (
 		<>
 			<span onClick={props.handleEditClick}>
-				{props.budget}<i><BsFillCaretUpFill/></i><br/>
+				{props.budget}<br/>
 				<span className='small dull'>Income</span>
 			</span>
 		</>

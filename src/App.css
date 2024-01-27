@@ -82,7 +82,6 @@ button, input {
 }
 
 input {
-	width: 20%;
 	border: 0;
 	background-color: var(--transparent);
 	color: var(--light-gray);
@@ -90,13 +89,6 @@ input {
 
 .btn {
 	border: 0;
-}
-
-.widget .icon {
-	size: 100px;
-	/* outline: auto; */
-	width: 100px;
-
 }
 
 .small {
@@ -123,7 +115,7 @@ input {
 ul {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 20px 20px;
 }
 
 li  {
@@ -152,23 +144,15 @@ li .right {
 /* Add Expense */
 
 .add-exp input {
-	float: inline-start;
-	padding: 0;
-	margin: 0;
-	width: 42%;
-
-	border: 0;
-	background-color: var(--transparent);
-	padding: 13px 5px;
-	color: var(--light-gray);
+	border: solid var(--accent) 1px;
+	margin: 10px 30px;
+	width: 80%;
+	padding: 20px 10px;
+	font-size: 18px;
 }
 
 .add-exp .btn {
-	font-size: 35px;
-	width: 10%;
-	margin: 0;
-	padding: 0;
-	border: 0;
-	border-radius: 10px;
-	float: inline-end;
+	margin: 10px 30px;
+	width: 40%;
+	font-size: 30px;
 }
