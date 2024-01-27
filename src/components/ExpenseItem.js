@@ -16,7 +16,7 @@ const ExpenseItem = (props) => {
 		<li className='list'>
 			<span className='left'>{props.name}</span>
 			<span className='center'>₹{props.cost}</span>
-			<span className='right del'><MdDeleteForever onClick={handleDeleteExpense}/></span>
+			<span className='right del'><MdDeleteForever color='#BD1B42' onClick={handleDeleteExpense}/></span>
 		</li>
 	);
 };

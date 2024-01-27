@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
+import { BsFillCaretDownFill } from "react-icons/bs";
 
 const RemainingBudget = () => {
 	const { expenses, budget } = useContext(AppContext);
@@ -12,7 +13,8 @@ const RemainingBudget = () => {
 
 	return (
 		<div class={`alert p-4 ${alertType}`}>
-			<span>{budget - totalExpenses}</span>
+			<span>{budget - totalExpenses}<i className='icon'><BsFillCaretDownFill/></i></span><br/>
+			<span className='small dull'>Remaining</span>
 		</div>
 	);
 };
